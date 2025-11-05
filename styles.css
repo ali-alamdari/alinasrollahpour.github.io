@@ -1,0 +1,41 @@
+* {
+    color: white;
+    font-family: sans-serif;
+}
+body {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div#cadr {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(28, 28, 28);
+    border-radius: 20px;
+    border-width: 2px;
+    border-color: gray;
+    padding: 20px;
+}
+
+img#profile {
+    width: 200px;
+    height: 200px;
+    border-radius: 1000px;
+}
+
+p#keywords {
+    color: rgba(0, 0, 0, 0);
+}
+
+p#name {
+    font-weight: bold;
+    color: rgb(0, 89, 255);
+    font-size: 4rem;
+}

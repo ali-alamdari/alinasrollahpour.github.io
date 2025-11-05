@@ -1,153 +1,32 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Ali Alamdari — Senior Freelance Web Developer</title>
-  <style>
-    :root{
-      --bg:#0b0f13;            /* deep background */
-      --card:#0f1720;          /* card background */
-      --glass: rgba(255,255,255,0.03);
-      --accent:#2ea0ff;       /* bright blue */
-      --muted:#98a0b3;
-      --radius:18px;
-      --maxw:720px;
-      --ff: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-    }
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Ali Alamdari</title>
+    <meta name="description" content="Ali Alamdari, web solutions engineer." />
+    <link rel="icon" href="/a-16.png" />
+    <meta name="theme-color" content="#0ea5a4" />
 
-    /* Reset & base */
-    *{box-sizing:border-box}
-    html,body{height:100%}
-    body{
-      margin:0;
-      font-family:var(--ff);
-      background: radial-gradient(1200px 400px at 10% 10%, rgba(46,160,255,0.06), transparent),
-                  radial-gradient(900px 300px at 90% 90%, rgba(0,72,186,0.05), transparent),
-                  var(--bg);
-      color:#e6eef8;
-      -webkit-font-smoothing:antialiased;
-      -moz-osx-font-smoothing:grayscale;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      padding:32px;
-    }
+    <!-- Open Graph -->
+    <meta property="og:title" content="ali-alamdari · Home" />
+    <meta property="og:description" content="Personal website of Ali Alamdari." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://alialamdari.ir/" />
 
-    /* Centered card */
-    .card{
-      width:100%;
-      max-width:var(--maxw);
-      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
-      border-radius:calc(var(--radius) + 6px);
-      padding:40px 44px;
-      text-align:center;
-      box-shadow: 0 8px 30px rgba(2,6,23,0.7), inset 0 1px 0 rgba(255,255,255,0.02);
-      border: 1px solid rgba(255,255,255,0.03);
-      position:relative;
-      overflow:hidden;
-    }
-
-    /* ambient blue glow behind card */
-    .card::before{
-      content:"";
-      position:absolute;
-      left:50%;
-      top:-30%;
-      transform:translateX(-50%);
-      width:140%;
-      height:240px;
-      background: radial-gradient(closest-side, rgba(46,160,255,0.12), transparent 50%);
-      filter: blur(30px);
-      pointer-events:none;
-      z-index:0;
-    }
-
-    .card > *{position:relative; z-index:1}
-
-    /* avatar placeholder */
-    .avatar{
-      width:112px;
-      height:112px;
-      margin:0 auto 18px;
-      border-radius:999px;
-      background: linear-gradient(135deg, rgba(46,160,255,0.18), rgba(10,30,60,0.28));
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      font-weight:700;
-      font-size:34px;
-      color:var(--accent);
-      border: 1px solid rgba(46,160,255,0.12);
-      box-shadow: 0 6px 18px rgba(16,28,48,0.6), inset 0 -6px 30px rgba(255,255,255,0.015);
-    }
-
-    h1{
-      margin:10px 0 6px;
-      font-size:30px;
-      letter-spacing:0.2px;
-      color:#eaf6ff;
-      font-weight:600;
-    }
-
-    .role{
-      margin:0 auto 18px;
-      color:var(--muted);
-      font-size:13.5px;
-      padding:6px 12px;
-      border-radius:999px;
-      display:inline-block;
-      background: linear-gradient(180deg, rgba(255,255,255,0.012), rgba(255,255,255,0.006));
-      border: 1px solid rgba(255,255,255,0.02);
-    }
-
-    /* profession explain section */
-    .about{
-      margin-top:16px;
-      font-size:15px;
-      line-height:1.6;
-      color:#cfe6ff;
-      background: linear-gradient(90deg, rgba(46,160,255,0.02), rgba(10,20,30,0.01));
-      padding:18px 22px;
-      border-radius:14px;
-      text-align:left;
-      box-shadow: 0 6px 18px rgba(10,18,30,0.5);
-    }
-
-    .about strong{color:#ffffff}
-
-    /* small footer */
-    .meta{
-      margin-top:18px;
-      font-size:13px;
-      color:var(--muted);
-    }
-
-    /* responsive tweaks */
-    @media (max-width:520px){
-      .card{padding:28px 20px}
-      h1{font-size:24px}
-      .avatar{width:88px;height:88px;font-size:28px}
-    }
-  </style>
+    <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
-  <main class="card" role="main" aria-labelledby="name">
-    <div class="avatar" aria-hidden="true">AA</div>
-    <h1 id="name">Ali Alamdari</h1>
-    <div class="role">Senior Freelance Web Developer</div>
 
-    <section class="about" aria-label="Profession description">
-      <p><strong>Ali</strong> designs and builds robust, maintainable web backends and APIs with a focus on scalability, security and developer ergonomics. He specializes in:</p>
-      <ul>
-        <li>API design & integrations (REST / GraphQL)</li>
-        <li>Scalable backend systems and microservices</li>
-        <li>Performance tuning, observability and CI/CD</li>
-      </ul>
-      <p>Ali prefers clean, minimal architecture and clear communication — shipping reliable solutions that align with product goals and timelines.</p>
-    </section>
-
-    <div class="meta">Available for remote contracts · Open to long-term collaborations</div>
-  </main>
+    <div id="cadr">
+        <img id="profile" src="/ali-profile.jpg" alt="ali profile"/>
+        <p id="name">Ali Alamdari</p>
+        <p id="professional-title">Web solutions engineer.</p>
+        <p id="tool-set">The main tools I`m experienced with are ASP.NET Core and React</p>
+    </div>
+    
+    <p id="keywords">
+        Ali Alamdari: backend engineer - C# developer - react developer
+    </p>
 </body>
 </html>
